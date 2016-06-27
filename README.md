@@ -1,1 +1,4 @@
-# BreakPadDumpTool
+要顺利执行dump脚本，需要按照以下特定的文件结构存放！
+在父目录里存放版本目录以及两个执行文件dump_syms和minidump_stackwalk
+每个版本目录中，abi存放动态库文件，dump存放dmp文件
+目录结构完成以后，即可执行dump.sh脚本
