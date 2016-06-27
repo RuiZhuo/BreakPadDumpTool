@@ -1,0 +1,1632 @@
+Operating system: Android
+                  0.0.0 Linux 3.4.0-perf-g1ccebb5-00148-g5f2009a #1 SMP PREEMPT Fri Dec 27 16:52:36 CST 2013 armv7l
+CPU: arm
+     ARMv7 Qualcomm part(0x510002d0) features: swp,half,thumb,fastmult,vfpv2,edsp,neon,vfpv3,tls
+     2 CPUs
+
+Crash reason:  SIGSEGV
+Crash address: 0x0
+Process uptime: not available
+
+Thread 10 (crashed)
+ 0  libxplan.so + 0x190234
+     r0 = 0x5e6dfb8c    r1 = 0x00000000    r2 = 0x00000001    r3 = 0x00000000
+     r4 = 0x00000001    r5 = 0x5e6dfb7c    r6 = 0x5e6dfb80    r7 = 0x5e6dfb78
+     r8 = 0x5c99abc0    r9 = 0xffffffff   r10 = 0x000001e0   r12 = 0x00000000
+     fp = 0x00000356    sp = 0x5e6dfb68    lr = 0x401f60c5    pc = 0x5e149234
+    Found by: given as instruction pointer in context
+ 1  libxplan.so + 0x346bcf
+     sp = 0x5e6dfbb0    pc = 0x5e2ffbd1
+    Found by: stack scanning
+ 2  libxplan.so + 0x18fbc9
+     sp = 0x5e6dfbb8    pc = 0x5e148bcb
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0x8f17b6
+     sp = 0x5e6dfbcc    pc = 0x419567b8
+    Found by: stack scanning
+ 4  libxplan.so + 0x18fcff
+     sp = 0x5e6dfbf4    pc = 0x5e148d01
+    Found by: stack scanning
+ 5  dalvik-LinearAlloc (deleted) + 0x3181f6
+     sp = 0x5e6dfc38    pc = 0x574051f8
+    Found by: stack scanning
+ 6  libdvm.so + 0x1f332
+     sp = 0x5e6dfc58    pc = 0x40db8334
+    Found by: stack scanning
+ 7  dalvik-heap (deleted) + 0x8df206
+     sp = 0x5e6dfc64    pc = 0x41944208
+    Found by: stack scanning
+ 8  libdvm.so + 0x4e07f
+     sp = 0x5e6dfc70    pc = 0x40de7081
+    Found by: stack scanning
+ 9  data@app@com.dovo.xplan-1.apk@classes.dex + 0x8736b
+     sp = 0x5e6dfc78    pc = 0x5c58436d
+    Found by: stack scanning
+10  libxplan.so + 0x18fb0f
+     sp = 0x5e6dfc7c    pc = 0x5e148b11
+    Found by: stack scanning
+11  libc.so + 0x158ef
+     sp = 0x5e6dfc98    pc = 0x401f48f1
+    Found by: stack scanning
+12  libc.so + 0x158b7
+     sp = 0x5e6dfc9c    pc = 0x401f48b9
+    Found by: stack scanning
+13  libc.so + 0x170c3
+     sp = 0x5e6dfcb8    pc = 0x401f60c5
+    Found by: stack scanning
+14  libdvm.so + 0x5001d
+     sp = 0x5e6dfcc0    pc = 0x40de901f
+    Found by: stack scanning
+15  dalvik-LinearAlloc (deleted) + 0x3187ee
+     sp = 0x5e6dfcc8    pc = 0x574057f0
+    Found by: stack scanning
+16  system@framework@framework.jar@classes.dex + 0x7b0929
+     sp = 0x5e6dfcd0    pc = 0x58e3a92b
+    Found by: stack scanning
+17  libdvm.so + 0x69a73
+     sp = 0x5e6dfce0    pc = 0x40e02a75
+    Found by: stack scanning
+18  system@framework@framework.jar@classes.dex + 0x7b0929
+     sp = 0x5e6dfce4    pc = 0x58e3a92b
+    Found by: stack scanning
+19  dalvik-heap (deleted) + 0x8df376
+     sp = 0x5e6dfce8    pc = 0x41944378
+    Found by: stack scanning
+20  dalvik-heap (deleted) + 0x8df376
+     sp = 0x5e6dfcf0    pc = 0x41944378
+    Found by: stack scanning
+21  dalvik-LinearAlloc (deleted) + 0x31820a
+     sp = 0x5e6dfcf8    pc = 0x5740520c
+    Found by: stack scanning
+22  dalvik-heap (deleted) + 0x8df206
+     sp = 0x5e6dfd00    pc = 0x41944208
+    Found by: stack scanning
+23  dalvik-LinearAlloc (deleted) + 0x3181f6
+     sp = 0x5e6dfd08    pc = 0x574051f8
+    Found by: stack scanning
+24  data@app@com.dovo.xplan-1.apk@classes.dex + 0x9123c
+     sp = 0x5e6dfd10    pc = 0x5c58e23e
+    Found by: stack scanning
+25  libdvm.so + 0x69a9b
+     sp = 0x5e6dfd20    pc = 0x40e02a9d
+    Found by: stack scanning
+26  data@app@com.dovo.xplan-1.apk@classes.dex + 0x9123c
+     sp = 0x5e6dfd24    pc = 0x5c58e23e
+    Found by: stack scanning
+27  dalvik-heap (deleted) + 0x8df206
+     sp = 0x5e6dfd28    pc = 0x41944208
+    Found by: stack scanning
+28  data@app@com.dovo.xplan-1.apk@classes.dex + 0x9123c
+     sp = 0x5e6dfd2c    pc = 0x5c58e23e
+    Found by: stack scanning
+29  0x5a4baffe
+     sp = 0x5e6dfd34    pc = 0x5a4bb000
+    Found by: stack scanning
+30  data@app@com.dovo.xplan-1.apk@classes.dex + 0x1d37e
+     sp = 0x5e6dfd3c    pc = 0x5c51a380
+    Found by: stack scanning
+31  libdvm.so + 0x4ff23
+     sp = 0x5e6dfd50    pc = 0x40de8f25
+    Found by: stack scanning
+32  dalvik-LinearAlloc (deleted) + 0x3181f6
+     sp = 0x5e6dfd5c    pc = 0x574051f8
+    Found by: stack scanning
+33  dalvik-LinearAlloc (deleted) + 0x3181f6
+     sp = 0x5e6dfd60    pc = 0x574051f8
+    Found by: stack scanning
+34  libdvm.so + 0x4df13
+     sp = 0x5e6dfd64    pc = 0x40de6f15
+    Found by: stack scanning
+35  dalvik-heap (deleted) + 0x8df206
+     sp = 0x5e6dfd74    pc = 0x41944208
+    Found by: stack scanning
+36  libdvm.so + 0x4fdc7
+     sp = 0x5e6dfd80    pc = 0x40de8dc9
+    Found by: stack scanning
+37  dalvik-LinearAlloc (deleted) + 0x3181f6
+     sp = 0x5e6dfd8c    pc = 0x574051f8
+    Found by: stack scanning
+38  data@app@com.dovo.xplan-1.apk@classes.dex + 0x5e1de
+     sp = 0x5e6dfd90    pc = 0x5c55b1e0
+    Found by: stack scanning
+39  dalvik-heap (deleted) + 0x8df206
+     sp = 0x5e6dfd9c    pc = 0x41944208
+    Found by: stack scanning
+40  libdvm.so + 0x1f4be
+     sp = 0x5e6dfda0    pc = 0x40db84c0
+    Found by: stack scanning
+41  libdvm.so + 0x287e2
+     sp = 0x5e6dfda8    pc = 0x40dc17e4
+    Found by: stack scanning
+42  libdvm.so + 0xa6c5e
+     sp = 0x5e6dfdb4    pc = 0x40e3fc60
+    Found by: stack scanning
+43  dalvik-LinearAlloc (deleted) + 0x319146
+     sp = 0x5e6dfdb8    pc = 0x57406148
+    Found by: stack scanning
+44  libdvm.so + 0x2cfaa
+     sp = 0x5e6dfdd0    pc = 0x40dc5fac
+    Found by: stack scanning
+45  dalvik-LinearAlloc (deleted) + 0x319146
+     sp = 0x5e6dfe48    pc = 0x57406148
+    Found by: stack scanning
+46  dalvik-heap (deleted) + 0x8df8be
+     sp = 0x5e6dfe50    pc = 0x419448c0
+    Found by: stack scanning
+47  system@framework@framework.jar@classes.dex + 0x70202b
+     sp = 0x5e6dfe58    pc = 0x58d8c02d
+    Found by: stack scanning
+48  libdvm.so + 0x5f69b
+     sp = 0x5e6dfe60    pc = 0x40df869d
+    Found by: stack scanning
+49  dalvik-LinearAlloc (deleted) + 0x319146
+     sp = 0x5e6dfe68    pc = 0x57406148
+    Found by: stack scanning
+50  dalvik-heap (deleted) + 0x8df8be
+     sp = 0x5e6dfe6c    pc = 0x419448c0
+    Found by: stack scanning
+51  libdvm.so + 0xab5b6
+     sp = 0x5e6dfe78    pc = 0x40e445b8
+    Found by: stack scanning
+52  libdvm.so + 0xab8ae
+     sp = 0x5e6dfe7c    pc = 0x40e448b0
+    Found by: stack scanning
+53  libdvm.so + 0xab8b2
+     sp = 0x5e6dfe80    pc = 0x40e448b4
+    Found by: stack scanning
+54  libdvm.so + 0x5f6c5
+     sp = 0x5e6dfe90    pc = 0x40df86c7
+    Found by: stack scanning
+55  libdvm.so + 0x54aed
+     sp = 0x5e6dfeac    pc = 0x40dedaef
+    Found by: stack scanning
+56  libdvm.so + 0x54a4b
+     sp = 0x5e6dfee0    pc = 0x40deda4d
+    Found by: stack scanning
+57  libdvm.so + 0x54a4b
+     sp = 0x5e6dfeec    pc = 0x40deda4d
+    Found by: stack scanning
+58  libc.so + 0x12f32
+     sp = 0x5e6dfef0    pc = 0x401f1f34
+    Found by: stack scanning
+59  libc.so + 0x1268a
+     sp = 0x5e6dff00    pc = 0x401f168c
+    Found by: stack scanning
+60  libEGL.so + 0x21c3a
+     sp = 0x5e6dff10    pc = 0x4006ac3c
+    Found by: stack scanning
+
+Thread 0
+ 0  libc.so + 0xda50
+     r0 = 0xfffffffc    r1 = 0xbe9575d8    r2 = 0x00000010    r3 = 0x00001059
+     r4 = 0x5a9c0f18    r5 = 0x00001059    r6 = 0x00000000    r7 = 0x000000fc
+     r8 = 0x00000000    r9 = 0x00000014   r10 = 0x5a9c0f2c   r12 = 0x402c8ff0
+     fp = 0xbe95774c    sp = 0xbe957590    lr = 0x402c45b5    pc = 0x401eca50
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x170c3
+     sp = 0xbe9575a0    pc = 0x401f60c5
+    Found by: stack scanning
+ 2  libbinder.so + 0x19ad3
+     sp = 0xbe9575a8    pc = 0x4037cad5
+    Found by: stack scanning
+ 3  libbinder.so + 0x19aed
+     sp = 0xbe9575c0    pc = 0x4037caef
+    Found by: stack scanning
+ 4  dalvik-LinearAlloc (deleted) + 0x525ce
+     sp = 0xbe9575c4    pc = 0x5713f5d0
+    Found by: stack scanning
+ 5  libdvm.so + 0x1f332
+     sp = 0xbe9575c8    pc = 0x40db8334
+    Found by: stack scanning
+ 6  dalvik-LinearAlloc (deleted) + 0x525ce
+     sp = 0xbe9575d4    pc = 0x5713f5d0
+    Found by: stack scanning
+ 7  libdvm.so + 0x4e087
+     sp = 0xbe9575e0    pc = 0x40de7089
+    Found by: stack scanning
+ 8  libandroid_runtime.so + 0x5f53b
+     sp = 0xbe9575ec    pc = 0x403ed53d
+    Found by: stack scanning
+ 9  dalvik-heap (deleted) + 0x6e1016
+     sp = 0xbe957608    pc = 0x41746018
+    Found by: stack scanning
+10  dalvik-heap (deleted) + 0x907376
+     sp = 0xbe95760c    pc = 0x4196c378
+    Found by: stack scanning
+11  dalvik-heap (deleted) + 0x907376
+     sp = 0xbe957610    pc = 0x4196c378
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x907376
+     sp = 0xbe957618    pc = 0x4196c378
+    Found by: stack scanning
+13  dalvik-heap (deleted) + 0x907376
+     sp = 0xbe957628    pc = 0x4196c378
+    Found by: stack scanning
+14  libdvm.so + 0x8f17e
+     sp = 0xbe957630    pc = 0x40e28180
+    Found by: stack scanning
+15  libdvm.so + 0xab5b6
+     sp = 0xbe957634    pc = 0x40e445b8
+    Found by: stack scanning
+16  libdvm.so + 0xab5b6
+     sp = 0xbe95763c    pc = 0x40e445b8
+    Found by: stack scanning
+17  dalvik-heap (deleted) + 0x907376
+     sp = 0xbe957644    pc = 0x4196c378
+    Found by: stack scanning
+18  libdvm.so + 0x2bb76
+     sp = 0xbe957648    pc = 0x40dc4b78
+    Found by: stack scanning
+19  dalvik-heap (deleted) + 0x1926
+     sp = 0xbe957658    pc = 0x41066928
+    Found by: stack scanning
+20  libdvm.so + 0x66d73
+     sp = 0xbe957668    pc = 0x40dffd75
+    Found by: stack scanning
+21  libdvm.so + 0xab5b6
+     sp = 0xbe95766c    pc = 0x40e445b8
+    Found by: stack scanning
+22  dalvik-heap (deleted) + 0x907356
+     sp = 0xbe957674    pc = 0x4196c358
+    Found by: stack scanning
+23  libdvm.so + 0x2bb76
+     sp = 0xbe957678    pc = 0x40dc4b78
+    Found by: stack scanning
+24  libdvm.so + 0x4d77f
+     sp = 0xbe957684    pc = 0x40de6781
+    Found by: stack scanning
+25  libdvm.so + 0x55145
+     sp = 0xbe957690    pc = 0x40dee147
+    Found by: stack scanning
+26  dalvik-heap (deleted) + 0x907376
+     sp = 0xbe957694    pc = 0x4196c378
+    Found by: stack scanning
+27  dalvik-heap (deleted) + 0x907356
+     sp = 0xbe9576a0    pc = 0x4196c358
+    Found by: stack scanning
+28  libdvm.so + 0x54cdf
+     sp = 0xbe9576a8    pc = 0x40dedce1
+    Found by: stack scanning
+29  dalvik-heap (deleted) + 0x907356
+     sp = 0xbe9576ac    pc = 0x4196c358
+    Found by: stack scanning
+30  libc.so + 0x11442
+     sp = 0xbe9576d0    pc = 0x401f0444
+    Found by: stack scanning
+31  libutils.so + 0x1481b
+     sp = 0xbe957700    pc = 0x402c481d
+    Found by: stack scanning
+32  libandroid_runtime.so + 0x5f051
+     sp = 0xbe957720    pc = 0x403ed053
+    Found by: stack scanning
+33  dalvik-LinearAlloc (deleted) + 0xb3d86
+     sp = 0xbe95772c    pc = 0x571a0d88
+    Found by: stack scanning
+34  libdvm.so + 0x1f332
+     sp = 0xbe957738    pc = 0x40db8334
+    Found by: stack scanning
+35  dalvik-heap (deleted) + 0x6f974e
+     sp = 0xbe957744    pc = 0x4175e750
+    Found by: stack scanning
+36  dalvik-heap (deleted) + 0x6f96d2
+     sp = 0xbe95774c    pc = 0x4175e6d4
+    Found by: stack scanning
+37  libdvm.so + 0x4e07f
+     sp = 0xbe957750    pc = 0x40de7081
+    Found by: stack scanning
+38  system@framework@framework.jar@classes.dex + 0x702d47
+     sp = 0xbe957758    pc = 0x58d8cd49
+    Found by: stack scanning
+39  libandroid_runtime.so + 0x5f06d
+     sp = 0xbe95775c    pc = 0x403ed06f
+    Found by: stack scanning
+40  dalvik-LinearAlloc (deleted) + 0x123f9e
+     sp = 0xbe957790    pc = 0x57210fa0
+    Found by: stack scanning
+41  dalvik-heap (deleted) + 0x1fad6
+     sp = 0xbe95779c    pc = 0x41084ad8
+    Found by: stack scanning
+42  libdvm.so + 0x5f971
+     sp = 0xbe9577a8    pc = 0x40df8973
+    Found by: stack scanning
+43  dalvik-LinearAlloc (deleted) + 0x19c2ea
+     sp = 0xbe9577b0    pc = 0x572892ec
+    Found by: stack scanning
+44  dalvik-heap (deleted) + 0x18154e
+     sp = 0xbe9577b8    pc = 0x411e6550
+    Found by: stack scanning
+45  dalvik-LinearAlloc (deleted) + 0x19c2d6
+     sp = 0xbe9577c0    pc = 0x572892d8
+    Found by: stack scanning
+46  system@framework@framework.jar@classes.dex + 0x715341
+     sp = 0xbe9577c8    pc = 0x58d9f343
+    Found by: stack scanning
+47  libdvm.so + 0x69a9b
+     sp = 0xbe9577d8    pc = 0x40e02a9d
+    Found by: stack scanning
+48  system@framework@framework.jar@classes.dex + 0x715341
+     sp = 0xbe9577dc    pc = 0x58d9f343
+    Found by: stack scanning
+49  dalvik-heap (deleted) + 0x18154e
+     sp = 0xbe9577e0    pc = 0x411e6550
+    Found by: stack scanning
+50  system@framework@framework.jar@classes.dex + 0x715341
+     sp = 0xbe9577e4    pc = 0x58d9f343
+    Found by: stack scanning
+51  0x5921dffe
+     sp = 0xbe9577ec    pc = 0x5921e000
+    Found by: stack scanning
+52  system@framework@framework.jar@classes.dex + 0x103922
+     sp = 0xbe9577f4    pc = 0x5878d924
+    Found by: stack scanning
+53  libdvm.so + 0x69f35
+     sp = 0xbe957800    pc = 0x40e02f37
+    Found by: stack scanning
+54  system@framework@framework.jar@classes.dex + 0x715341
+     sp = 0xbe957808    pc = 0x58d9f343
+    Found by: stack scanning
+55  libdvm.so + 0x6a37f
+     sp = 0xbe957810    pc = 0x40e03381
+    Found by: stack scanning
+56  dalvik-heap (deleted) + 0x6f7fe6
+     sp = 0xbe957814    pc = 0x4175cfe8
+    Found by: stack scanning
+57  dalvik-heap (deleted) + 0x907b26
+     sp = 0xbe957824    pc = 0x4196cb28
+    Found by: stack scanning
+58  dalvik-heap (deleted) + 0x1fad6
+     sp = 0xbe95782c    pc = 0x41084ad8
+    Found by: stack scanning
+59  libdvm.so + 0x668eb
+     sp = 0xbe957830    pc = 0x40dff8ed
+    Found by: stack scanning
+60  system@framework@framework.jar@classes.dex + 0x367010
+     sp = 0xbe957840    pc = 0x589f1012
+    Found by: stack scanning
+61  dalvik-heap (deleted) + 0x5849e
+     sp = 0xbe95784c    pc = 0x410bd4a0
+    Found by: stack scanning
+62  libdvm.so + 0x1f4be
+     sp = 0xbe957850    pc = 0x40db84c0
+    Found by: stack scanning
+63  dalvik-heap (deleted) + 0x6f96d2
+     sp = 0xbe95785c    pc = 0x4175e6d4
+    Found by: stack scanning
+64  libdvm.so + 0x287e2
+     sp = 0xbe957860    pc = 0x40dc17e4
+    Found by: stack scanning
+65  libdvm.so + 0xa6c5e
+     sp = 0xbe95786c    pc = 0x40e3fc60
+    Found by: stack scanning
+66  dalvik-LinearAlloc (deleted) + 0xd401e
+     sp = 0xbe957870    pc = 0x571c1020
+    Found by: stack scanning
+67  dalvik-heap (deleted) + 0x6f96d2
+     sp = 0xbe957884    pc = 0x4175e6d4
+    Found by: stack scanning
+68  libdvm.so + 0x2cfaa
+     sp = 0xbe957888    pc = 0x40dc5fac
+    Found by: stack scanning
+69  libdvm.so + 0x465a1
+     sp = 0xbe957890    pc = 0x40ddf5a3
+    Found by: stack scanning
+70  libdvm.so + 0xab5b6
+     sp = 0xbe957894    pc = 0x40e445b8
+    Found by: stack scanning
+71  system@framework@framework.jar@classes.dex + 0x4fa6c6
+     sp = 0xbe957898    pc = 0x58b846c8
+    Found by: stack scanning
+72  dalvik-LinearAlloc (deleted) + 0xc38e
+     sp = 0xbe9578a0    pc = 0x570f9390
+    Found by: stack scanning
+73  dalvik-bitmap-1 (deleted) + 0x3ffffe
+     sp = 0xbe9578a4    pc = 0x51465000
+    Found by: stack scanning
+74  dalvik-heap (deleted) + 0x6f9626
+     sp = 0xbe9578a8    pc = 0x4175e628
+    Found by: stack scanning
+75  dalvik-LinearAlloc (deleted) + 0xd401e
+     sp = 0xbe957900    pc = 0x571c1020
+    Found by: stack scanning
+76  libdvm.so + 0xa6c5e
+     sp = 0xbe957904    pc = 0x40e3fc60
+    Found by: stack scanning
+77  dalvik-heap (deleted) + 0x6f96d2
+     sp = 0xbe957910    pc = 0x4175e6d4
+    Found by: stack scanning
+78  libdvm.so + 0x5f945
+     sp = 0xbe957918    pc = 0x40df8947
+    Found by: stack scanning
+79  dalvik-LinearAlloc (deleted) + 0xd401e
+     sp = 0xbe957928    pc = 0x571c1020
+    Found by: stack scanning
+80  dalvik-heap (deleted) + 0x2a6
+     sp = 0xbe957930    pc = 0x410652a8
+    Found by: stack scanning
+81  dalvik-heap (deleted) + 0x6f95ce
+     sp = 0xbe957934    pc = 0x4175e5d0
+    Found by: stack scanning
+82  dalvik-heap (deleted) + 0x6e1016
+     sp = 0xbe95793c    pc = 0x41746018
+    Found by: stack scanning
+83  libcutils.so + 0x8665
+     sp = 0xbe957948    pc = 0x40238667
+    Found by: stack scanning
+84  dalvik-heap (deleted) + 0x6f96be
+     sp = 0xbe957954    pc = 0x4175e6c0
+    Found by: stack scanning
+85  libdvm.so + 0x6dd03
+     sp = 0xbe957958    pc = 0x40e06d05
+    Found by: stack scanning
+86  libdvm.so + 0xab926
+     sp = 0xbe95795c    pc = 0x40e44928
+    Found by: stack scanning
+87  libdvm.so + 0xab5b6
+     sp = 0xbe957960    pc = 0x40e445b8
+    Found by: stack scanning
+88  libdvm.so + 0xab5b6
+     sp = 0xbe95796c    pc = 0x40e445b8
+    Found by: stack scanning
+89  libdvm.so + 0x2baf6
+     sp = 0xbe957970    pc = 0x40dc4af8
+    Found by: stack scanning
+90  dalvik-heap (deleted) + 0x17276
+     sp = 0xbe95797c    pc = 0x4107c278
+    Found by: stack scanning
+91  dalvik-heap (deleted) + 0x6f95ce
+     sp = 0xbe957984    pc = 0x4175e5d0
+    Found by: stack scanning
+92  dalvik-heap (deleted) + 0x63ad6
+     sp = 0xbe957988    pc = 0x410c8ad8
+    Found by: stack scanning
+93  dalvik-LinearAlloc (deleted) + 0xd401e
+     sp = 0xbe95798c    pc = 0x571c1020
+    Found by: stack scanning
+94  dalvik-heap (deleted) + 0x6f96be
+     sp = 0xbe957994    pc = 0x4175e6c0
+    Found by: stack scanning
+95  dalvik-heap (deleted) + 0x2a6
+     sp = 0xbe95799c    pc = 0x410652a8
+    Found by: stack scanning
+96  libdvm.so + 0x668eb
+     sp = 0xbe9579a0    pc = 0x40dff8ed
+    Found by: stack scanning
+97  dalvik-heap (deleted) + 0x2a6
+     sp = 0xbe9579a4    pc = 0x410652a8
+    Found by: stack scanning
+98  dalvik-LinearAlloc (deleted) + 0xbf26
+     sp = 0xbe9579ac    pc = 0x570f8f28
+    Found by: stack scanning
+99  system@framework@core.jar@classes.dex + 0xadfc4
+     sp = 0xbe9579b0    pc = 0x5819afc6
+    Found by: stack scanning
+100  dalvik-heap (deleted) + 0x439e
+     sp = 0xbe9579bc    pc = 0x410693a0
+    Found by: stack scanning
+101  libdvm.so + 0x1f4be
+     sp = 0xbe9579c0    pc = 0x40db84c0
+    Found by: stack scanning
+102  libdvm.so + 0x287e2
+     sp = 0xbe9579d0    pc = 0x40dc17e4
+    Found by: stack scanning
+103  libdvm.so + 0xa6c5e
+     sp = 0xbe9579dc    pc = 0x40e3fc60
+    Found by: stack scanning
+104  dalvik-LinearAlloc (deleted) + 0xb88fe
+     sp = 0xbe9579e0    pc = 0x571a5900
+    Found by: stack scanning
+105  libdvm.so + 0x2cfaa
+     sp = 0xbe9579f8    pc = 0x40dc5fac
+    Found by: stack scanning
+106  dalvik-LinearAlloc (deleted) + 0xb88fe
+     sp = 0xbe957a70    pc = 0x571a5900
+    Found by: stack scanning
+107  system@framework@framework.jar@classes.dex + 0x70366a
+     sp = 0xbe957a80    pc = 0x58d8d66c
+    Found by: stack scanning
+108  libdvm.so + 0x5f69b
+     sp = 0xbe957a88    pc = 0x40df869d
+    Found by: stack scanning
+109  dalvik-LinearAlloc (deleted) + 0xb88fe
+     sp = 0xbe957a90    pc = 0x571a5900
+    Found by: stack scanning
+110  dalvik-LinearAlloc (deleted) + 0xb88fe
+     sp = 0xbe957a98    pc = 0x571a5900
+    Found by: stack scanning
+111  libdvm.so + 0x4bef7
+     sp = 0xbe957aa4    pc = 0x40de4ef9
+    Found by: stack scanning
+112  app_process + 0xff9
+     sp = 0xbe957aa8    pc = 0x400a0ffb
+    Found by: stack scanning
+113  app_process + 0xfbf
+     sp = 0xbe957aac    pc = 0x400a0fc1
+    Found by: stack scanning
+114  app_process + 0xf92
+     sp = 0xbe957ab0    pc = 0x400a0f94
+    Found by: stack scanning
+115  app_process + 0xfc8
+     sp = 0xbe957ab4    pc = 0x400a0fca
+    Found by: stack scanning
+116  libdvm.so + 0x4a6a9
+     sp = 0xbe957ab8    pc = 0x40de36ab
+    Found by: stack scanning
+117  libandroid_runtime.so + 0x91a53
+     sp = 0xbe957ac4    pc = 0x4041fa55
+    Found by: stack scanning
+118  dalvik-LinearAlloc (deleted) + 0xb88fe
+     sp = 0xbe957acc    pc = 0x571a5900
+    Found by: stack scanning
+119  libdvm.so + 0x4bf59
+     sp = 0xbe957ad0    pc = 0x40de4f5b
+    Found by: stack scanning
+120  dalvik-heap (deleted) + 0x596de
+     sp = 0xbe957ad4    pc = 0x410be6e0
+    Found by: stack scanning
+121  libdvm.so + 0x4a687
+     sp = 0xbe957ad8    pc = 0x40de3689
+    Found by: stack scanning
+122  libandroid_runtime.so + 0x48acd
+     sp = 0xbe957ae0    pc = 0x403d6acf
+    Found by: stack scanning
+123  libandroid_runtime.so + 0x494eb
+     sp = 0xbe957af0    pc = 0x403d74ed
+    Found by: stack scanning
+124  dalvik-LinearAlloc (deleted) + 0xb88fe
+     sp = 0xbe957af4    pc = 0x571a5900
+    Found by: stack scanning
+125  libc.so + 0x155d9
+     sp = 0xbe957b20    pc = 0x401f45db
+    Found by: stack scanning
+126  libskia.so + 0x1535ba
+     sp = 0xbe957b28    pc = 0x405c95bc
+    Found by: stack scanning
+127  libutils.so + 0x11ca7
+     sp = 0xbe957b38    pc = 0x402c1ca9
+    Found by: stack scanning
+128  libutils.so + 0x11cff
+     sp = 0xbe957b50    pc = 0x402c1d01
+    Found by: stack scanning
+129  libandroid_runtime.so + 0x48b67
+     sp = 0xbe957b68    pc = 0x403d6b69
+    Found by: stack scanning
+130  app_process + 0xf92
+     sp = 0xbe957b74    pc = 0x400a0f94
+    Found by: stack scanning
+131  app_process + 0xdd1
+     sp = 0xbe957b88    pc = 0x400a0dd3
+    Found by: stack scanning
+132  app_process + 0xfde
+     sp = 0xbe957b98    pc = 0x400a0fe0
+    Found by: stack scanning
+133  libandroid_runtime.so + 0xa9e1e
+     sp = 0xbe957bb8    pc = 0x40437e20
+    Found by: stack scanning
+134  app_process + 0xc6b
+     sp = 0xbe957be8    pc = 0x400a0c6d
+    Found by: stack scanning
+135  libc.so + 0x17253
+     sp = 0xbe957c08    pc = 0x401f6255
+    Found by: stack scanning
+136  app_process + 0xb3e
+     sp = 0xbe957c0c    pc = 0x400a0b40
+    Found by: stack scanning
+137  libc.so + 0x1722b
+     sp = 0xbe957c10    pc = 0x401f622d
+    Found by: stack scanning
+138  app_process + 0xb36
+     sp = 0xbe957c20    pc = 0x400a0b38
+    Found by: stack scanning
+139  app_process + 0x32
+     sp = 0xbe957c90    pc = 0x400a0034
+    Found by: stack scanning
+140  0x40162ffe
+     sp = 0xbe957ca8    pc = 0x40163000
+    Found by: stack scanning
+141  app_process + 0xb1e
+     sp = 0xbe957cb8    pc = 0x400a0b20
+    Found by: stack scanning
+142  dalvik-heap (deleted) + 0x6ccc0fe
+     sp = 0xbe957d0c    pc = 0x47d31100
+    Found by: stack scanning
+143  dalvik-mark-stack (deleted) + 0x2c2b4fe
+     sp = 0xbe957d6c    pc = 0x54584500
+    Found by: stack scanning
+144  dalvik-heap (deleted) + 0x480243
+     sp = 0xbe957d70    pc = 0x414e5245
+    Found by: stack scanning
+145  dalvik-mark-stack (deleted) + 0x2bdcf4a
+     sp = 0xbe957d74    pc = 0x54535f4c
+    Found by: stack scanning
+146  dalvik-heap (deleted) + 0x63b024d
+     sp = 0xbe957d78    pc = 0x4741524f
+    Found by: stack scanning
+147  dalvik-heap (deleted) + 0xef9e062
+     sp = 0xbe957d8c    pc = 0x50003064
+    Found by: stack scanning
+148  dalvik-heap (deleted) + 0xb58f44a
+     sp = 0xbe957dcc    pc = 0x4c5f444c
+    Found by: stack scanning
+149  dalvik-heap (deleted) + 0x4bf247
+     sp = 0xbe957dd0    pc = 0x41524249
+    Found by: stack scanning
+150  dalvik-heap (deleted) + 0xf590950
+     sp = 0xbe957dd4    pc = 0x505f5952
+    Found by: stack scanning
+151  dalvik-mark-stack (deleted) + 0xaebe3f
+     sp = 0xbe957df4    pc = 0x52444e41
+    Found by: stack scanning
+152  dalvik-mark-stack (deleted) + 0x2b9bf40
+     sp = 0xbe957dfc    pc = 0x544f4f42
+    Found by: stack scanning
+153  dalvik-heap (deleted) + 0xe40ff4a
+     sp = 0xbe957e00    pc = 0x4f474f4c
+    Found by: stack scanning
+154  libmedia.so + 0x6213b
+     sp = 0xbe957e04    pc = 0x4100313d
+    Found by: stack scanning
+155  dalvik-heap (deleted) + 0xe4bf44c
+     sp = 0xbe957e08    pc = 0x4f52444e
+    Found by: stack scanning
+156  dalvik-mark-stack (deleted) + 0xc9b447
+     sp = 0xbe957e0c    pc = 0x525f4449
+    Found by: stack scanning
+157  dalvik-mark-stack (deleted) + 0xaebe3f
+     sp = 0xbe957e1c    pc = 0x52444e41
+    Found by: stack scanning
+158  dalvik-heap (deleted) + 0x44d033f
+     sp = 0xbe957e24    pc = 0x45535341
+    Found by: stack scanning
+159  libmedia.so + 0x6606e
+     sp = 0xbe957e34    pc = 0x41007070
+    Found by: stack scanning
+160  dalvik-heap (deleted) + 0xe4bf44c
+     sp = 0xbe957e38    pc = 0x4f52444e
+    Found by: stack scanning
+161  dalvik-heap (deleted) + 0x358f447
+     sp = 0xbe957e3c    pc = 0x445f4449
+    Found by: stack scanning
+162  dalvik-mark-stack (deleted) + 0x1ab705f
+     sp = 0xbe957e48    pc = 0x53410061
+    Found by: stack scanning
+163  dalvik-heap (deleted) + 0xc58f343
+     sp = 0xbe957e4c    pc = 0x4d5f4345
+    Found by: stack scanning
+164  dalvik-mark-stack (deleted) + 0x2b8c54d
+     sp = 0xbe957e50    pc = 0x544e554f
+    Found by: stack scanning
+165  dalvik-heap (deleted) + 0xd42ff4e
+     sp = 0xbe957e54    pc = 0x4e494f50
+    Found by: stack scanning
+166  dalvik-heap (deleted) + 0xf48ff4a
+     sp = 0xbe957e64    pc = 0x504f4f4c
+    Found by: stack scanning
+167  dalvik-mark-stack (deleted) + 0x3b9bd5d
+     sp = 0xbe957e68    pc = 0x554f4d5f
+    Found by: stack scanning
+168  dalvik-heap (deleted) + 0xe4a044c
+     sp = 0xbe957e6c    pc = 0x4f50544e
+    Found by: stack scanning
+169  dalvik-heap (deleted) + 0xe48f1fe
+     sp = 0xbe957e7c    pc = 0x4f4f4200
+    Found by: stack scanning
+170  dalvik-heap (deleted) + 0x45f352
+     sp = 0xbe957e80    pc = 0x414c4354
+    Found by: stack scanning
+171  dalvik-heap (deleted) + 0x4a0351
+     sp = 0xbe957e84    pc = 0x41505353
+    Found by: stack scanning
+
+Thread 1
+ 0  libc.so + 0xdc80
+     r0 = 0x400be0a0    r1 = 0x00000080    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x400be0a0    r5 = 0x400be09c    r6 = 0x00000000    r7 = 0x000000f0
+     r8 = 0x40ded1d5    r9 = 0x00100000   r10 = 0x5c4fcfa0   r12 = 0x00000000
+     fp = 0x00000001    sp = 0x5a303e68    lr = 0x401f1f78    pc = 0x401ecc80
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x12fd2
+     sp = 0x5a303e88    pc = 0x401f1fd4
+    Found by: stack scanning
+ 2  libdvm.so + 0x6d633
+     sp = 0x5a303e90    pc = 0x40e06635
+    Found by: stack scanning
+ 3  libdvm.so + 0x6d633
+     sp = 0x5a303e98    pc = 0x40e06635
+    Found by: stack scanning
+ 4  libdvm.so + 0x6d551
+     sp = 0x5a303ea0    pc = 0x40e06553
+    Found by: stack scanning
+ 5  libdvm.so + 0x6d507
+     sp = 0x5a303ea8    pc = 0x40e06509
+    Found by: stack scanning
+ 6  libdvm.so + 0xab8ae
+     sp = 0x5a303eb0    pc = 0x40e448b0
+    Found by: stack scanning
+ 7  libdvm.so + 0xab5b6
+     sp = 0x5a303eb8    pc = 0x40e445b8
+    Found by: stack scanning
+ 8  libdvm.so + 0x541d3
+     sp = 0x5a303ec4    pc = 0x40ded1d5
+    Found by: stack scanning
+ 9  libdvm.so + 0x5421f
+     sp = 0x5a303ed0    pc = 0x40ded221
+    Found by: stack scanning
+10  dalvik-heap (deleted) + 0xe10e
+     sp = 0x5a303ee0    pc = 0x41073110
+    Found by: stack scanning
+11  libdvm.so + 0x541d3
+     sp = 0x5a303ee8    pc = 0x40ded1d5
+    Found by: stack scanning
+12  libc.so + 0x12f32
+     sp = 0x5a303ef0    pc = 0x401f1f34
+    Found by: stack scanning
+13  libc.so + 0x1268a
+     sp = 0x5a303f00    pc = 0x401f168c
+    Found by: stack scanning
+
+Thread 2
+ 0  libc.so + 0xd534
+     r0 = 0xfffffffc    r1 = 0x00000000    r2 = 0x00000000    r3 = 0x00000008
+     r4 = 0x5a403e80    r5 = 0x40e445b8    r6 = 0x40e2c697    r7 = 0x000000b1
+     r8 = 0x40ded1d5    r9 = 0x5a911f90   r10 = 0x0003c798   r12 = 0x40e3fe34
+     fp = 0x00000001    sp = 0x5a403e40    lr = 0x401f939b    pc = 0x401ec534
+    Found by: given as instruction pointer in context
+ 1  libdvm.so + 0x935f1
+     sp = 0x5a403e48    pc = 0x40e2c5f3
+    Found by: stack scanning
+ 2  libdvm.so + 0x51b31
+     sp = 0x5a403e58    pc = 0x40deab33
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0x6e910e
+     sp = 0x5a403e5c    pc = 0x4174e110
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x6e9166
+     sp = 0x5a403e60    pc = 0x4174e168
+    Found by: stack scanning
+ 5  dalvik-heap (deleted) + 0x6e917e
+     sp = 0x5a403e6c    pc = 0x4174e180
+    Found by: stack scanning
+ 6  dalvik-heap (deleted) + 0x6e917e
+     sp = 0x5a403e7c    pc = 0x4174e180
+    Found by: stack scanning
+ 7  dalvik-heap (deleted) + 0x6e917e
+     sp = 0x5a403e8c    pc = 0x4174e180
+    Found by: stack scanning
+ 8  libdvm.so + 0x53721
+     sp = 0x5a403e90    pc = 0x40dec723
+    Found by: stack scanning
+ 9  dalvik-heap (deleted) + 0xe10e
+     sp = 0x5a403e94    pc = 0x41073110
+    Found by: stack scanning
+10  dalvik-heap (deleted) + 0x6e917e
+     sp = 0x5a403e98    pc = 0x4174e180
+    Found by: stack scanning
+11  libdvm.so + 0xab5b6
+     sp = 0x5a403eb4    pc = 0x40e445b8
+    Found by: stack scanning
+12  libdvm.so + 0x541d3
+     sp = 0x5a403ec0    pc = 0x40ded1d5
+    Found by: stack scanning
+13  libdvm.so + 0x5421f
+     sp = 0x5a403ed0    pc = 0x40ded221
+    Found by: stack scanning
+14  dalvik-heap (deleted) + 0xe10e
+     sp = 0x5a403ee0    pc = 0x41073110
+    Found by: stack scanning
+15  libdvm.so + 0x541d3
+     sp = 0x5a403ee8    pc = 0x40ded1d5
+    Found by: stack scanning
+16  libc.so + 0x12f32
+     sp = 0x5a403ef0    pc = 0x401f1f34
+    Found by: stack scanning
+17  libc.so + 0x1268a
+     sp = 0x5a403f00    pc = 0x401f168c
+    Found by: stack scanning
+
+Thread 3
+ 0  libc.so + 0xcc94
+     r0 = 0x0000002f    r1 = 0x5d9b8e10    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x00000000    r5 = 0x00000006    r6 = 0x5ccc502f    r7 = 0x0000008e
+     r8 = 0x5a5e7028    r9 = 0x00100000   r10 = 0x5a8e2a98   r12 = 0x5d9b8df0
+     fp = 0x00000001    sp = 0x5d9b8de0    lr = 0x40df945d    pc = 0x401ebc94
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x111c5
+     sp = 0x5d9b8e10    pc = 0x401f01c7
+    Found by: stack scanning
+
+Thread 4
+ 0  libc.so + 0xdc80
+     r0 = 0x40e44ab4    r1 = 0x00000080    r2 = 0xffffff78    r3 = 0x00000000
+     r4 = 0x40e44ab4    r5 = 0x40e44aac    r6 = 0xffffff78    r7 = 0x000000f0
+     r8 = 0x40ded1d5    r9 = 0x00100000   r10 = 0x5a657e10   r12 = 0x00000000
+     fp = 0x00000001    sp = 0x5dab8d40    lr = 0x401f1f78    pc = 0x401ecc80
+    Found by: given as instruction pointer in context
+ 1  libdvm.so + 0xabab2
+     sp = 0x5dab8d44    pc = 0x40e44ab4
+    Found by: stack scanning
+ 2  libdvm.so + 0xabaaa
+     sp = 0x5dab8d50    pc = 0x40e44aac
+    Found by: stack scanning
+ 3  libdvm.so + 0xabab2
+     sp = 0x5dab8d54    pc = 0x40e44ab4
+    Found by: stack scanning
+ 4  libc.so + 0x12fd2
+     sp = 0x5dab8d60    pc = 0x401f1fd4
+    Found by: stack scanning
+ 5  libdvm.so + 0xaba76
+     sp = 0x5dab8d68    pc = 0x40e44a78
+    Found by: stack scanning
+ 6  libdvm.so + 0xaba76
+     sp = 0x5dab8d70    pc = 0x40e44a78
+    Found by: stack scanning
+ 7  libdvm.so + 0x6e749
+     sp = 0x5dab8d78    pc = 0x40e0774b
+    Found by: stack scanning
+ 8  system@framework@core.jar@classes.dex + 0xaa066
+     sp = 0x5dab8d80    pc = 0x58197068
+    Found by: stack scanning
+ 9  libdvm.so + 0xa6c5e
+     sp = 0x5dab8d88    pc = 0x40e3fc60
+    Found by: stack scanning
+10  libdvm.so + 0xaba76
+     sp = 0x5dab8d8c    pc = 0x40e44a78
+    Found by: stack scanning
+11  libdvm.so + 0xabab6
+     sp = 0x5dab8d90    pc = 0x40e44ab8
+    Found by: stack scanning
+12  system@framework@framework.jar@classes.dex + 0x3679bc
+     sp = 0x5dab8d94    pc = 0x589f19be
+    Found by: stack scanning
+13  dalvik-jit-code-cache (deleted) + 0x2de5
+     sp = 0x5dab8da0    pc = 0x5e8e2de7
+    Found by: stack scanning
+14  dalvik-heap (deleted) + 0x172a4ff
+     sp = 0x5dab8dbc    pc = 0x4278f501
+    Found by: stack scanning
+15  libdvm.so + 0x541d3
+     sp = 0x5dab8e18    pc = 0x40ded1d5
+    Found by: stack scanning
+16  libdvm.so + 0xa6f96
+     sp = 0x5dab8e28    pc = 0x40e3ff98
+    Found by: stack scanning
+17  libdvm.so + 0x6e7af
+     sp = 0x5dab8e30    pc = 0x40e077b1
+    Found by: stack scanning
+18  system@framework@core.jar@classes.dex + 0x2168ca
+     sp = 0x5dab8e38    pc = 0x583038cc
+    Found by: stack scanning
+19  libdvm.so + 0x5f69b
+     sp = 0x5dab8e40    pc = 0x40df869d
+    Found by: stack scanning
+20  dalvik-LinearAlloc (deleted) + 0x551e
+     sp = 0x5dab8e48    pc = 0x570f2520
+    Found by: stack scanning
+21  dalvik-heap (deleted) + 0x6e92ee
+     sp = 0x5dab8e4c    pc = 0x4174e2f0
+    Found by: stack scanning
+22  dalvik-heap (deleted) + 0x6e935e
+     sp = 0x5dab8e54    pc = 0x4174e360
+    Found by: stack scanning
+23  libdvm.so + 0xab5b6
+     sp = 0x5dab8e58    pc = 0x40e445b8
+    Found by: stack scanning
+24  dalvik-heap (deleted) + 0x6e92ee
+     sp = 0x5dab8e5c    pc = 0x4174e2f0
+    Found by: stack scanning
+25  dalvik-heap (deleted) + 0x6e9346
+     sp = 0x5dab8e60    pc = 0x4174e348
+    Found by: stack scanning
+26  dalvik-heap (deleted) + 0x6e935e
+     sp = 0x5dab8e6c    pc = 0x4174e360
+    Found by: stack scanning
+27  libdvm.so + 0x55145
+     sp = 0x5dab8e78    pc = 0x40dee147
+    Found by: stack scanning
+28  dalvik-heap (deleted) + 0x6e935e
+     sp = 0x5dab8e7c    pc = 0x4174e360
+    Found by: stack scanning
+29  dalvik-heap (deleted) + 0x6e935e
+     sp = 0x5dab8e8c    pc = 0x4174e360
+    Found by: stack scanning
+30  libdvm.so + 0x53721
+     sp = 0x5dab8e90    pc = 0x40dec723
+    Found by: stack scanning
+31  dalvik-heap (deleted) + 0xe10e
+     sp = 0x5dab8e94    pc = 0x41073110
+    Found by: stack scanning
+32  dalvik-heap (deleted) + 0x6e935e
+     sp = 0x5dab8e98    pc = 0x4174e360
+    Found by: stack scanning
+33  libdvm.so + 0xab5b6
+     sp = 0x5dab8ec4    pc = 0x40e445b8
+    Found by: stack scanning
+34  libdvm.so + 0x5421f
+     sp = 0x5dab8ed0    pc = 0x40ded221
+    Found by: stack scanning
+35  dalvik-heap (deleted) + 0xe10e
+     sp = 0x5dab8ee0    pc = 0x41073110
+    Found by: stack scanning
+36  libdvm.so + 0x541d3
+     sp = 0x5dab8ee8    pc = 0x40ded1d5
+    Found by: stack scanning
+37  libc.so + 0x12f32
+     sp = 0x5dab8ef0    pc = 0x401f1f34
+    Found by: stack scanning
+38  libc.so + 0x1268a
+     sp = 0x5dab8f00    pc = 0x401f168c
+    Found by: stack scanning
+
+Thread 5
+ 0  libc.so + 0xdc80
+     r0 = 0x5cb4fe30    r1 = 0x00000080    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x5cb4fe30    r5 = 0x5cb4fe20    r6 = 0x00000000    r7 = 0x000000f0
+     r8 = 0x00000000    r9 = 0x00000000   r10 = 0x00000000   r12 = 0x00000000
+     fp = 0x00000000    sp = 0x5dbb8d28    lr = 0x401f1f78    pc = 0x401ecc80
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x12fd2
+     sp = 0x5dbb8d48    pc = 0x401f1fd4
+    Found by: stack scanning
+ 2  libdvm.so + 0x52581
+     sp = 0x5dbb8d60    pc = 0x40deb583
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0x55b6
+     sp = 0x5dbb8d70    pc = 0x4106a5b8
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x88e
+     sp = 0x5dbb8d78    pc = 0x41065890
+    Found by: stack scanning
+ 5  libdvm.so + 0x1f4be
+     sp = 0x5dbb8d7c    pc = 0x40db84c0
+    Found by: stack scanning
+ 6  libdvm.so + 0x65803
+     sp = 0x5dbb8d88    pc = 0x40dfe805
+    Found by: stack scanning
+ 7  system@framework@core.jar@classes.dex + 0x7a254
+     sp = 0x5dbb8d9c    pc = 0x58167256
+    Found by: stack scanning
+ 8  libdvm.so + 0x287e2
+     sp = 0x5dbb8da8    pc = 0x40dc17e4
+    Found by: stack scanning
+ 9  libdvm.so + 0xa6c5e
+     sp = 0x5dbb8db4    pc = 0x40e3fc60
+    Found by: stack scanning
+10  dalvik-LinearAlloc (deleted) + 0x5d3e
+     sp = 0x5dbb8db8    pc = 0x570f2d40
+    Found by: stack scanning
+11  libdvm.so + 0x2cfaa
+     sp = 0x5dbb8dd0    pc = 0x40dc5fac
+    Found by: stack scanning
+12  dalvik-LinearAlloc (deleted) + 0x5d3e
+     sp = 0x5dbb8e48    pc = 0x570f2d40
+    Found by: stack scanning
+13  dalvik-heap (deleted) + 0x6e93de
+     sp = 0x5dbb8e50    pc = 0x4174e3e0
+    Found by: stack scanning
+14  system@framework@core.jar@classes.dex + 0x2162c9
+     sp = 0x5dbb8e58    pc = 0x583032cb
+    Found by: stack scanning
+15  libdvm.so + 0x5f69b
+     sp = 0x5dbb8e60    pc = 0x40df869d
+    Found by: stack scanning
+16  dalvik-LinearAlloc (deleted) + 0x5d3e
+     sp = 0x5dbb8e68    pc = 0x570f2d40
+    Found by: stack scanning
+17  dalvik-heap (deleted) + 0x6e93de
+     sp = 0x5dbb8e6c    pc = 0x4174e3e0
+    Found by: stack scanning
+18  libdvm.so + 0xab5b6
+     sp = 0x5dbb8e78    pc = 0x40e445b8
+    Found by: stack scanning
+19  libdvm.so + 0xab8ae
+     sp = 0x5dbb8e7c    pc = 0x40e448b0
+    Found by: stack scanning
+20  libdvm.so + 0xab8b2
+     sp = 0x5dbb8e80    pc = 0x40e448b4
+    Found by: stack scanning
+21  libdvm.so + 0x5f6c5
+     sp = 0x5dbb8e90    pc = 0x40df86c7
+    Found by: stack scanning
+22  libdvm.so + 0xab8ae
+     sp = 0x5dbb8e9c    pc = 0x40e448b0
+    Found by: stack scanning
+23  libdvm.so + 0x54aed
+     sp = 0x5dbb8eac    pc = 0x40dedaef
+    Found by: stack scanning
+24  libdvm.so + 0x54a4b
+     sp = 0x5dbb8ee0    pc = 0x40deda4d
+    Found by: stack scanning
+25  libdvm.so + 0x54a4b
+     sp = 0x5dbb8eec    pc = 0x40deda4d
+    Found by: stack scanning
+26  libc.so + 0x12f32
+     sp = 0x5dbb8ef0    pc = 0x401f1f34
+    Found by: stack scanning
+27  libc.so + 0x1268a
+     sp = 0x5dbb8f00    pc = 0x401f168c
+    Found by: stack scanning
+
+Thread 6
+ 0  libc.so + 0xdc80
+     r0 = 0x5cbda3a8    r1 = 0x00000080    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x5cbda3a8    r5 = 0x5cbda398    r6 = 0x00000000    r7 = 0x000000f0
+     r8 = 0x00000000    r9 = 0x00000000   r10 = 0x00000000   r12 = 0x00000000
+     fp = 0x00000000    sp = 0x5dcb8d28    lr = 0x401f1f78    pc = 0x401ecc80
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x12fd2
+     sp = 0x5dcb8d48    pc = 0x401f1fd4
+    Found by: stack scanning
+ 2  libdvm.so + 0x52581
+     sp = 0x5dcb8d60    pc = 0x40deb583
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0x568e
+     sp = 0x5dcb8d70    pc = 0x4106a690
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x88e
+     sp = 0x5dcb8d78    pc = 0x41065890
+    Found by: stack scanning
+ 5  libdvm.so + 0x1f4be
+     sp = 0x5dcb8d7c    pc = 0x40db84c0
+    Found by: stack scanning
+ 6  libdvm.so + 0x65803
+     sp = 0x5dcb8d88    pc = 0x40dfe805
+    Found by: stack scanning
+ 7  system@framework@core.jar@classes.dex + 0x7a270
+     sp = 0x5dcb8d9c    pc = 0x58167272
+    Found by: stack scanning
+ 8  libdvm.so + 0x287e2
+     sp = 0x5dcb8da8    pc = 0x40dc17e4
+    Found by: stack scanning
+ 9  libdvm.so + 0xa6c5e
+     sp = 0x5dcb8db4    pc = 0x40e3fc60
+    Found by: stack scanning
+10  dalvik-LinearAlloc (deleted) + 0x5d3e
+     sp = 0x5dcb8db8    pc = 0x570f2d40
+    Found by: stack scanning
+11  libdvm.so + 0x2cfaa
+     sp = 0x5dcb8dd0    pc = 0x40dc5fac
+    Found by: stack scanning
+12  dalvik-LinearAlloc (deleted) + 0x5d3e
+     sp = 0x5dcb8e48    pc = 0x570f2d40
+    Found by: stack scanning
+13  dalvik-heap (deleted) + 0x6e9546
+     sp = 0x5dcb8e50    pc = 0x4174e548
+    Found by: stack scanning
+14  system@framework@core.jar@classes.dex + 0x2162c9
+     sp = 0x5dcb8e58    pc = 0x583032cb
+    Found by: stack scanning
+15  libdvm.so + 0x5f69b
+     sp = 0x5dcb8e60    pc = 0x40df869d
+    Found by: stack scanning
+16  dalvik-LinearAlloc (deleted) + 0x5d3e
+     sp = 0x5dcb8e68    pc = 0x570f2d40
+    Found by: stack scanning
+17  dalvik-heap (deleted) + 0x6e9546
+     sp = 0x5dcb8e6c    pc = 0x4174e548
+    Found by: stack scanning
+18  libdvm.so + 0xab5b6
+     sp = 0x5dcb8e78    pc = 0x40e445b8
+    Found by: stack scanning
+19  libdvm.so + 0xab8ae
+     sp = 0x5dcb8e7c    pc = 0x40e448b0
+    Found by: stack scanning
+20  libdvm.so + 0xab8b2
+     sp = 0x5dcb8e80    pc = 0x40e448b4
+    Found by: stack scanning
+21  libdvm.so + 0x5f6c5
+     sp = 0x5dcb8e90    pc = 0x40df86c7
+    Found by: stack scanning
+22  libdvm.so + 0xab8ae
+     sp = 0x5dcb8e9c    pc = 0x40e448b0
+    Found by: stack scanning
+23  libdvm.so + 0x54aed
+     sp = 0x5dcb8eac    pc = 0x40dedaef
+    Found by: stack scanning
+24  libdvm.so + 0x54a4b
+     sp = 0x5dcb8ee0    pc = 0x40deda4d
+    Found by: stack scanning
+25  libdvm.so + 0x54a4b
+     sp = 0x5dcb8eec    pc = 0x40deda4d
+    Found by: stack scanning
+26  libc.so + 0x12f32
+     sp = 0x5dcb8ef0    pc = 0x401f1f34
+    Found by: stack scanning
+27  libc.so + 0x1268a
+     sp = 0x5dcb8f00    pc = 0x401f168c
+    Found by: stack scanning
+
+Thread 7
+ 0  libc.so + 0xdc80
+     r0 = 0x5c491ea8    r1 = 0x00000080    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x5c491ea8    r5 = 0x5c491e98    r6 = 0x00000000    r7 = 0x000000f0
+     r8 = 0x00000000    r9 = 0x00000000   r10 = 0x00000000   r12 = 0x00000000
+     fp = 0x00000000    sp = 0x5ddb8d28    lr = 0x401f1f78    pc = 0x401ecc80
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x12fd2
+     sp = 0x5ddb8d48    pc = 0x401f1fd4
+    Found by: stack scanning
+ 2  libdvm.so + 0x52581
+     sp = 0x5ddb8d60    pc = 0x40deb583
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0x16e36
+     sp = 0x5ddb8d70    pc = 0x4107be38
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x88e
+     sp = 0x5ddb8d78    pc = 0x41065890
+    Found by: stack scanning
+ 5  libdvm.so + 0x1f4be
+     sp = 0x5ddb8d7c    pc = 0x40db84c0
+    Found by: stack scanning
+ 6  libdvm.so + 0x65803
+     sp = 0x5ddb8d88    pc = 0x40dfe805
+    Found by: stack scanning
+ 7  system@framework@core.jar@classes.dex + 0x7a254
+     sp = 0x5ddb8d9c    pc = 0x58167256
+    Found by: stack scanning
+ 8  libdvm.so + 0x287e2
+     sp = 0x5ddb8da8    pc = 0x40dc17e4
+    Found by: stack scanning
+ 9  libdvm.so + 0xa6c5e
+     sp = 0x5ddb8db4    pc = 0x40e3fc60
+    Found by: stack scanning
+10  dalvik-LinearAlloc (deleted) + 0x5d3e
+     sp = 0x5ddb8db8    pc = 0x570f2d40
+    Found by: stack scanning
+11  libdvm.so + 0x2cfaa
+     sp = 0x5ddb8dd0    pc = 0x40dc5fac
+    Found by: stack scanning
+12  dalvik-LinearAlloc (deleted) + 0x5d3e
+     sp = 0x5ddb8e48    pc = 0x570f2d40
+    Found by: stack scanning
+13  dalvik-heap (deleted) + 0x6e96f6
+     sp = 0x5ddb8e50    pc = 0x4174e6f8
+    Found by: stack scanning
+14  system@framework@core.jar@classes.dex + 0x2162c9
+     sp = 0x5ddb8e58    pc = 0x583032cb
+    Found by: stack scanning
+15  libdvm.so + 0x5f69b
+     sp = 0x5ddb8e60    pc = 0x40df869d
+    Found by: stack scanning
+16  dalvik-LinearAlloc (deleted) + 0x5d3e
+     sp = 0x5ddb8e68    pc = 0x570f2d40
+    Found by: stack scanning
+17  dalvik-heap (deleted) + 0x6e96f6
+     sp = 0x5ddb8e6c    pc = 0x4174e6f8
+    Found by: stack scanning
+18  libdvm.so + 0xab5b6
+     sp = 0x5ddb8e78    pc = 0x40e445b8
+    Found by: stack scanning
+19  libdvm.so + 0xab8ae
+     sp = 0x5ddb8e7c    pc = 0x40e448b0
+    Found by: stack scanning
+20  libdvm.so + 0xab8b2
+     sp = 0x5ddb8e80    pc = 0x40e448b4
+    Found by: stack scanning
+21  libdvm.so + 0x5f6c5
+     sp = 0x5ddb8e90    pc = 0x40df86c7
+    Found by: stack scanning
+22  libdvm.so + 0xab8ae
+     sp = 0x5ddb8e9c    pc = 0x40e448b0
+    Found by: stack scanning
+23  libdvm.so + 0x54aed
+     sp = 0x5ddb8eac    pc = 0x40dedaef
+    Found by: stack scanning
+24  libdvm.so + 0x54a4b
+     sp = 0x5ddb8ee0    pc = 0x40deda4d
+    Found by: stack scanning
+25  libdvm.so + 0x54a4b
+     sp = 0x5ddb8eec    pc = 0x40deda4d
+    Found by: stack scanning
+26  libc.so + 0x12f32
+     sp = 0x5ddb8ef0    pc = 0x401f1f34
+    Found by: stack scanning
+27  libc.so + 0x1268a
+     sp = 0x5ddb8f00    pc = 0x401f168c
+    Found by: stack scanning
+
+Thread 8
+ 0  libc.so + 0xcb70
+     r0 = 0x00000009    r1 = 0xc0186201    r2 = 0x5deb8e28    r3 = 0x5deb8e24
+     r4 = 0x5ce22720    r5 = 0x5ce22750    r6 = 0x5ce226f0    r7 = 0x00000036
+     r8 = 0x00000001    r9 = 0x5ce226f8   r10 = 0x00000000   r12 = 0x40385f28
+     fp = 0x00000001    sp = 0x5deb8e08    lr = 0x402070b1    pc = 0x401ebb70
+    Found by: given as instruction pointer in context
+ 1  libbinder.so + 0x16b6f
+     sp = 0x5deb8e1c    pc = 0x40379b71
+    Found by: stack scanning
+ 2  libbinder.so + 0x17321
+     sp = 0x5deb8e58    pc = 0x4037a323
+    Found by: stack scanning
+ 3  libbinder.so + 0x22a1a
+     sp = 0x5deb8e64    pc = 0x40385a1c
+    Found by: stack scanning
+ 4  libbinder.so + 0x22a1a
+     sp = 0x5deb8e68    pc = 0x40385a1c
+    Found by: stack scanning
+ 5  libutils.so + 0x10903
+     sp = 0x5deb8e6c    pc = 0x402c0905
+    Found by: stack scanning
+ 6  libbinder.so + 0x1af57
+     sp = 0x5deb8e78    pc = 0x4037df59
+    Found by: stack scanning
+ 7  libutils.so + 0x10e37
+     sp = 0x5deb8e80    pc = 0x402c0e39
+    Found by: stack scanning
+ 8  libandroid_runtime.so + 0xb3be2
+     sp = 0x5deb8e98    pc = 0x40441be4
+    Found by: stack scanning
+ 9  libutils.so + 0x10dc3
+     sp = 0x5deb8e9c    pc = 0x402c0dc5
+    Found by: stack scanning
+10  libandroid_runtime.so + 0x489fd
+     sp = 0x5deb8ea8    pc = 0x403d69ff
+    Found by: stack scanning
+11  libandroid_runtime.so + 0x489cf
+     sp = 0x5deb8ec4    pc = 0x403d69d1
+    Found by: stack scanning
+12  libutils.so + 0x1099d
+     sp = 0x5deb8ed0    pc = 0x402c099f
+    Found by: stack scanning
+13  libutils.so + 0x10903
+     sp = 0x5deb8ee4    pc = 0x402c0905
+    Found by: stack scanning
+14  libc.so + 0x12f32
+     sp = 0x5deb8ef0    pc = 0x401f1f34
+    Found by: stack scanning
+15  libc.so + 0x1268a
+     sp = 0x5deb8f00    pc = 0x401f168c
+    Found by: stack scanning
+
+Thread 9
+ 0  libc.so + 0xcb70
+     r0 = 0x00000009    r1 = 0xc0186201    r2 = 0x5dfb8e28    r3 = 0x5dfb8e24
+     r4 = 0x5a5ecc80    r5 = 0x5a5eccb0    r6 = 0x5a5ecc50    r7 = 0x00000036
+     r8 = 0x00000001    r9 = 0x5a5ecc58   r10 = 0x00000000   r12 = 0x40385f28
+     fp = 0x00000001    sp = 0x5dfb8e08    lr = 0x402070b1    pc = 0x401ebb70
+    Found by: given as instruction pointer in context
+ 1  libbinder.so + 0x16b6f
+     sp = 0x5dfb8e1c    pc = 0x40379b71
+    Found by: stack scanning
+ 2  libbinder.so + 0x17321
+     sp = 0x5dfb8e58    pc = 0x4037a323
+    Found by: stack scanning
+ 3  libbinder.so + 0x22a1a
+     sp = 0x5dfb8e64    pc = 0x40385a1c
+    Found by: stack scanning
+ 4  libbinder.so + 0x22a1a
+     sp = 0x5dfb8e68    pc = 0x40385a1c
+    Found by: stack scanning
+ 5  libutils.so + 0x10903
+     sp = 0x5dfb8e6c    pc = 0x402c0905
+    Found by: stack scanning
+ 6  libbinder.so + 0x1af57
+     sp = 0x5dfb8e78    pc = 0x4037df59
+    Found by: stack scanning
+ 7  libutils.so + 0x10e37
+     sp = 0x5dfb8e80    pc = 0x402c0e39
+    Found by: stack scanning
+ 8  libandroid_runtime.so + 0xb3be2
+     sp = 0x5dfb8e98    pc = 0x40441be4
+    Found by: stack scanning
+ 9  libutils.so + 0x10dc3
+     sp = 0x5dfb8e9c    pc = 0x402c0dc5
+    Found by: stack scanning
+10  libandroid_runtime.so + 0x489fd
+     sp = 0x5dfb8ea8    pc = 0x403d69ff
+    Found by: stack scanning
+11  libandroid_runtime.so + 0x489cf
+     sp = 0x5dfb8ec4    pc = 0x403d69d1
+    Found by: stack scanning
+12  libutils.so + 0x1099d
+     sp = 0x5dfb8ed0    pc = 0x402c099f
+    Found by: stack scanning
+13  libutils.so + 0x10903
+     sp = 0x5dfb8ee4    pc = 0x402c0905
+    Found by: stack scanning
+14  libc.so + 0x12f32
+     sp = 0x5dfb8ef0    pc = 0x401f1f34
+    Found by: stack scanning
+15  libc.so + 0x1268a
+     sp = 0x5dfb8f00    pc = 0x401f168c
+    Found by: stack scanning
+
+Thread 11
+ 0  libc.so + 0xdc80
+     r0 = 0x5a911e80    r1 = 0x00000080    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x5a911e80    r5 = 0x5a911e7c    r6 = 0x00000000    r7 = 0x000000f0
+     r8 = 0x402c0905    r9 = 0x00100000   r10 = 0x40189600   r12 = 0x00000000
+     fp = 0x00000001    sp = 0x5e7dfe48    lr = 0x401f1f78    pc = 0x401ecc80
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x12fd2
+     sp = 0x5e7dfe68    pc = 0x401f1fd4
+    Found by: stack scanning
+ 2  libmedia.so + 0x5657f
+     sp = 0x5e7dfe80    pc = 0x40ff7581
+    Found by: stack scanning
+ 3  libdvm.so + 0xa0e05
+     sp = 0x5e7dfe84    pc = 0x40e39e07
+    Found by: stack scanning
+ 4  libmedia.so + 0x565fe
+     sp = 0x5e7dfe8c    pc = 0x40ff7600
+    Found by: stack scanning
+ 5  libandroid_runtime.so + 0xb3be2
+     sp = 0x5e7dfe98    pc = 0x40441be4
+    Found by: stack scanning
+ 6  libandroid_runtime.so + 0xb3be2
+     sp = 0x5e7dfe9c    pc = 0x40441be4
+    Found by: stack scanning
+ 7  libmedia.so + 0x5662d
+     sp = 0x5e7dfea0    pc = 0x40ff762f
+    Found by: stack scanning
+ 8  libandroid_runtime.so + 0x489fd
+     sp = 0x5e7dfea8    pc = 0x403d69ff
+    Found by: stack scanning
+ 9  libandroid_runtime.so + 0x489cf
+     sp = 0x5e7dfec4    pc = 0x403d69d1
+    Found by: stack scanning
+10  libutils.so + 0x1099d
+     sp = 0x5e7dfed0    pc = 0x402c099f
+    Found by: stack scanning
+11  libutils.so + 0x10903
+     sp = 0x5e7dfee4    pc = 0x402c0905
+    Found by: stack scanning
+12  libc.so + 0x12f32
+     sp = 0x5e7dfef0    pc = 0x401f1f34
+    Found by: stack scanning
+13  libc.so + 0x1268a
+     sp = 0x5e7dff00    pc = 0x401f168c
+    Found by: stack scanning
+
+Thread 12
+ 0  libc.so + 0xdc80
+     r0 = 0x5c498524    r1 = 0x00000080    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x5c498524    r5 = 0x5c498520    r6 = 0x00000000    r7 = 0x000000f0
+     r8 = 0x402c0905    r9 = 0x00100000   r10 = 0x5c498580   r12 = 0x00000000
+     fp = 0x00000001    sp = 0x5e8dfe38    lr = 0x401f1f78    pc = 0x401ecc80
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x12fd2
+     sp = 0x5e8dfe58    pc = 0x401f1fd4
+    Found by: stack scanning
+ 2  libmedia.so + 0x5680b
+     sp = 0x5e8dfe70    pc = 0x40ff780d
+    Found by: stack scanning
+ 3  libmedia.so + 0x5d185
+     sp = 0x5e8dfe7c    pc = 0x40ffe187
+    Found by: stack scanning
+ 4  libmedia.so + 0x569bb
+     sp = 0x5e8dfe88    pc = 0x40ff79bd
+    Found by: stack scanning
+ 5  libandroid_runtime.so + 0xb3be2
+     sp = 0x5e8dfe9c    pc = 0x40441be4
+    Found by: stack scanning
+ 6  libmedia.so + 0x569ff
+     sp = 0x5e8dfea0    pc = 0x40ff7a01
+    Found by: stack scanning
+ 7  libandroid_runtime.so + 0x489fd
+     sp = 0x5e8dfea8    pc = 0x403d69ff
+    Found by: stack scanning
+ 8  libandroid_runtime.so + 0x489cf
+     sp = 0x5e8dfec4    pc = 0x403d69d1
+    Found by: stack scanning
+ 9  libutils.so + 0x1099d
+     sp = 0x5e8dfed0    pc = 0x402c099f
+    Found by: stack scanning
+10  libutils.so + 0x10903
+     sp = 0x5e8dfee4    pc = 0x402c0905
+    Found by: stack scanning
+11  libc.so + 0x12f32
+     sp = 0x5e8dfef0    pc = 0x401f1f34
+    Found by: stack scanning
+12  libc.so + 0x1268a
+     sp = 0x5e8dff00    pc = 0x401f168c
+    Found by: stack scanning
+
+Thread 13
+ 0  libc.so + 0xdc80
+     r0 = 0x5d5c3200    r1 = 0x00000080    r2 = 0xfffffff8    r3 = 0x00000000
+     r4 = 0x5d5c3200    r5 = 0x5d5c31fc    r6 = 0xfffffff8    r7 = 0x000000f0
+     r8 = 0x5d5c31fc    r9 = 0x5c471764   r10 = 0x5ca974b0   r12 = 0x00000000
+     fp = 0x5a7965c2    sp = 0x5ec58e78    lr = 0x401f1f78    pc = 0x401ecc80
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x12fd2
+     sp = 0x5ec58e98    pc = 0x401f1fd4
+    Found by: stack scanning
+ 2  eglsubAndroid.so + 0x4ca3
+     sp = 0x5ec58eb0    pc = 0x5a794ca5
+    Found by: stack scanning
+ 3  eglsubAndroid.so + 0x67cb
+     sp = 0x5ec58ec0    pc = 0x5a7967cd
+    Found by: stack scanning
+ 4  eglsubAndroid.so + 0x4c47
+     sp = 0x5ec58ed4    pc = 0x5a794c49
+    Found by: stack scanning
+ 5  eglsubAndroid.so + 0x4c47
+     sp = 0x5ec58ee0    pc = 0x5a794c49
+    Found by: stack scanning
+ 6  libc.so + 0x12f32
+     sp = 0x5ec58ef0    pc = 0x401f1f34
+    Found by: stack scanning
+ 7  libc.so + 0x3a152
+     sp = 0x5ec58efc    pc = 0x40219154
+    Found by: stack scanning
+ 8  libc.so + 0x1268a
+     sp = 0x5ec58f00    pc = 0x401f168c
+    Found by: stack scanning
+
+Thread 14
+ 0  libc.so + 0xdc80
+     r0 = 0x5cbecfd0    r1 = 0x00000080    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x5cbecfd0    r5 = 0x5cbecfcc    r6 = 0x00000000    r7 = 0x000000f0
+     r8 = 0x5cbecfcc    r9 = 0x00000000   r10 = 0x5cbecf98   r12 = 0x00000000
+     fp = 0x5a7965c2    sp = 0x5eeede78    lr = 0x401f1f78    pc = 0x401ecc80
+    Found by: given as instruction pointer in context
+ 1  libc.so + 0x12fd2
+     sp = 0x5eeede98    pc = 0x401f1fd4
+    Found by: stack scanning
+ 2  eglsubAndroid.so + 0x4ca3
+     sp = 0x5eeedeb0    pc = 0x5a794ca5
+    Found by: stack scanning
+ 3  eglsubAndroid.so + 0x67cb
+     sp = 0x5eeedec0    pc = 0x5a7967cd
+    Found by: stack scanning
+ 4  eglsubAndroid.so + 0x4c47
+     sp = 0x5eeeded4    pc = 0x5a794c49
+    Found by: stack scanning
+ 5  eglsubAndroid.so + 0x4c47
+     sp = 0x5eeedee0    pc = 0x5a794c49
+    Found by: stack scanning
+ 6  libc.so + 0x12f32
+     sp = 0x5eeedef0    pc = 0x401f1f34
+    Found by: stack scanning
+ 7  libc.so + 0x3a152
+     sp = 0x5eeedefc    pc = 0x40219154
+    Found by: stack scanning
+ 8  libc.so + 0x1268a
+     sp = 0x5eeedf00    pc = 0x401f168c
+    Found by: stack scanning
+
+Loaded modules:
+0x40008000 - 0x40008fff  SurfaceFlinger read-only heap (deleted)  ???
+0x40010000 - 0x40012fff  libstagefright_yuv.so  ???
+0x40014000 - 0x40015fff  libqueue.so  ???
+0x40022000 - 0x40023fff  libgenlock.so  ???
+0x40028000 - 0x40029fff  libstagefright_enc_common.so  ???
+0x4002e000 - 0x40032fff  libsechook.so  ???
+0x40037000 - 0x4003dfff  libnetutils.so  ???
+0x40049000 - 0x4006afff  libEGL.so  ???  (WARNING: No symbols, libEGL.so, 09F2F060CFCEF6C0B6F6F2F9A8C9410D0)
+0x4006d000 - 0x40071fff  libgabi++.so  ???
+0x40073000 - 0x40082fff  __properties__ (deleted)  ???
+0x40093000 - 0x40097fff  libqc-opt.so  ???
+0x40098000 - 0x40099fff  libmedia_native.so  ???
+0x4009b000 - 0x4009efff  libtilerenderer.so  ???
+0x400a0000 - 0x400a1fff  app_process  ???  (main)  (WARNING: No symbols, app_process, B6BA3C29555528DC47805A31D61115D30)
+0x400a8000 - 0x400a9fff  libstdc++.so  ???
+0x400ad000 - 0x400b2fff  libGLESv1_CM.so  ???
+0x400b9000 - 0x400bbfff  libemoji.so  ???
+0x400c7000 - 0x400c9fff  libnativehelper.so  ???
+0x400cb000 - 0x400d0fff  libGLESv2.so  ???
+0x400d2000 - 0x400d5fff  libbluedroid.so  ???
+0x400d7000 - 0x400d7fff  dalvik-aux-structure (deleted)  ???
+0x400dc000 - 0x400e4fff  libui.so  ???
+0x400e7000 - 0x400e8fff  libhardware.so  ???
+0x400ef000 - 0x4011ffff  libgui.so  ???
+0x40120000 - 0x40126fff  libhardware_legacy.so  ???
+0x40127000 - 0x40129fff  libETC1.so  ???
+0x4012b000 - 0x40137fff  libstagefright_foundation.so  ???
+0x40138000 - 0x4013afff  libaudioutils.so  ???
+0x4013c000 - 0x4013dfff  libcnefeatureconfig.so  ???
+0x40147000 - 0x40153fff  dalvik-aux-structure (deleted)  ???
+0x40156000 - 0x40158fff  libusbhost.so  ???
+0x40163000 - 0x40177fff  linker  ???
+0x40184000 - 0x40188fff  libspeexresampler.so  ???
+0x4018a000 - 0x4019ffff  libm.so  ???
+0x401a1000 - 0x401d0fff  libjpeg.so  ???
+0x401da000 - 0x401defff  liblog.so  ???
+0x401df000 - 0x40224fff  libc.so  ???  (WARNING: No symbols, libc.so, BF128A4877DD06BE7BB990EBB753A5010)
+0x40230000 - 0x4023ffff  libcutils.so  ???  (WARNING: No symbols, libcutils.so, A95768ADEAC8F8F4CD27878B8EABA63D0)
+0x4024e000 - 0x40250fff  libwpa_client.so  ???
+0x4025a000 - 0x4025dfff  libcorkscrew.so  ???
+0x4025f000 - 0x40272fff  libexpat.so  ???
+0x40273000 - 0x402a9fff  libstlport.so  ???
+0x402b0000 - 0x402c9fff  libutils.so  ???  (WARNING: No symbols, libutils.so, 85965C931A976496C5678008838AA1990)
+0x402ca000 - 0x402d8fff  libnv.so  ???
+0x402da000 - 0x402f4fff  libcamera_client.so  ???
+0x402f6000 - 0x40304fff  libgesture_client.so  ???
+0x40306000 - 0x4030cfff  system@framework@core-junit.jar@classes.dex  ???
+0x40313000 - 0x40318fff  libgccdemangle.so  ???
+0x4031a000 - 0x4032ffff  libz.so  ???
+0x40330000 - 0x40357fff  libhwui.so  ???
+0x40363000 - 0x40386fff  libbinder.so  ???  (WARNING: No symbols, libbinder.so, 9C80C9E33BA2BE023FC02AC0B48692420)
+0x4038e000 - 0x40441fff  libandroid_runtime.so  ???  (WARNING: No symbols, libandroid_runtime.so, 97D75792078BA1B4702C161B370208040)
+0x40443000 - 0x40475fff  libandroidfw.so  ???
+0x40476000 - 0x405c9fff  libskia.so  ???  (WARNING: No symbols, libskia.so, BA22223D230AFC18B90852EA166878B10)
+0x405d0000 - 0x4084cfff  libskiaemoji.so  ???
+0x40851000 - 0x40869fff  liboncrpc.so  ???
+0x4088d000 - 0x40894fff  libdsm.so  ???
+0x409dd000 - 0x409e5fff  libdiag.so  ???
+0x40a85000 - 0x40ac6fff  libGLES_trace.so  ???
+0x40ac7000 - 0x40b1bfff  libsqlite.so  ???
+0x40b1c000 - 0x40b6bfff  libsonivox.so  ???
+0x40b72000 - 0x40b81fff  dalvik-aux-structure (deleted)  ???
+0x40b87000 - 0x40c7bfff  libicuuc.so  ???
+0x40c80000 - 0x40d98fff  libicui18n.so  ???
+0x40d99000 - 0x40e44fff  libdvm.so  ???  (WARNING: No symbols, libdvm.so, 4A608C8A53F8202A02C1CE20610620650)
+0x40e47000 - 0x40f1cfff  libcrypto.so  ???
+0x40f1f000 - 0x40f56fff  libssl.so  ???
+0x40f57000 - 0x40f8afff  libharfbuzz.so  ???
+0x40fa1000 - 0x41018fff  libmedia.so  ???  (WARNING: No symbols, libmedia.so, 20F9AE69260F69AA4AE340C70C91277F0)
+0x41019000 - 0x41064fff  libdbus.so  ???
+0x41065000 - 0x51064fff  dalvik-heap (deleted)  ???  (WARNING: No symbols, dalvik-heap (deleted), 000000000000000000000000000000000)
+0x51065000 - 0x51464fff  dalvik-bitmap-1 (deleted)  ???  (WARNING: No symbols, dalvik-bitmap-1 (deleted), 000000000000000000000000000000000)
+0x51465000 - 0x5149dfff  dalvik-aux-structure (deleted)  ???
+0x514b0000 - 0x514cbfff  dalvik-aux-structure (deleted)  ???
+0x514dd000 - 0x518dcfff  dalvik-bitmap-2 (deleted)  ???
+0x518dd000 - 0x51954fff  dalvik-aux-structure (deleted)  ???
+0x51959000 - 0x56eaefff  dalvik-mark-stack (deleted)  ???  (WARNING: No symbols, dalvik-mark-stack (deleted), 000000000000000000000000000000000)
+0x56eaf000 - 0x56ec6fff  dalvik-aux-structure (deleted)  ???
+0x56ecb000 - 0x56ecffff  dalvik-aux-structure (deleted)  ???
+0x56ee5000 - 0x56eeafff  libstagefright_avc_common.so  ???
+0x56eec000 - 0x570ecfff  dalvik-card-table (deleted)  ???
+0x570ed000 - 0x580ecfff  dalvik-LinearAlloc (deleted)  ???  (WARNING: No symbols, dalvik-LinearAlloc (deleted), 000000000000000000000000000000000)
+0x580ed000 - 0x5842afff  system@framework@core.jar@classes.dex  ???  (WARNING: No symbols, system@framework@core.jar@classes.dex, 000000000000000000000000000000000)
+0x5842b000 - 0x5851afff  system@framework@bouncycastle.jar@classes.dex  ???
+0x5851b000 - 0x58689fff  system@framework@ext.jar@classes.dex  ???
+0x5868a000 - 0x59159fff  system@framework@framework.jar@classes.dex  ???  (WARNING: No symbols, system@framework@framework.jar@classes.dex, 000000000000000000000000000000000)
+0x5915a000 - 0x591e5fff  system@framework@android.policy.jar@classes.dex  ???
+0x591e6000 - 0x5921cfff  libjavacore.so  ???
+0x5921e000 - 0x592edfff  dalvik-aux-structure (deleted)  ???
+0x592ee000 - 0x5965ffff  system@framework@framework_ext.jar@classes.dex  ???
+0x59660000 - 0x598c7fff  system@framework@services.jar@classes.dex  ???
+0x598c8000 - 0x59a18fff  system@framework@apache-xml.jar@classes.dex  ???
+0x59a19000 - 0x5a1edfff  icudt48l.dat  ???
+0x5a1ee000 - 0x5a204fff  liblbeclient.so  ???
+0x5a404000 - 0x5a43bfff  data@data@com.lbe.security.miui@app_hips@client.jar@classes.dex  ???
+0x5a4bb000 - 0x5a4cbfff  dalvik-aux-structure (deleted)  ???
+0x5a4cc000 - 0x5a4cefff  libmiui_adfirewall.so  ???
+0x5a4d4000 - 0x5a4d7fff  libsoundpool.so  ???
+0x5a55e000 - 0x5a577fff  libvorbisidec.so  ???
+0x5a57a000 - 0x5a58cfff  libmtp.so  ???
+0x5a5ca000 - 0x5a5d7fff  libandroid.so  ???
+0x5a750000 - 0x5a75afff  libexif.so  ???
+0x5a761000 - 0x5a76dfff  libstagefright_amrnb_common.so  ???
+0x5a781000 - 0x5a78ffff  libgsl.so  ???
+0x5a790000 - 0x5a798fff  eglsubAndroid.so  ???  (WARNING: No symbols, eglsubAndroid.so, 026150156782899DCC5918B34EF00E180)
+0x5a7a7000 - 0x5a7c8fff  libEGL_adreno200.so  ???
+0x5a7ed000 - 0x5a7f4fff  librs_jni.so  ???
+0x5a853000 - 0x5a8d7fff  libRS.so  ???
+0x5a938000 - 0x5a93cfff  gralloc.msm8660.so  ???
+0x5a93d000 - 0x5a940fff  libmemalloc.so  ???
+0x5a948000 - 0x5a94cfff  libqdutils.so  ???
+0x5a95d000 - 0x5a98efff  libGLESv1_CM_adreno200.so  ???
+0x5a99d000 - 0x5a9b0fff  Roboto-Regular.ttf  ???
+0x5a9c2000 - 0x5a9d2fff  libGLESv2S3D_adreno200.so  ???
+0x5a9df000 - 0x5aa09fff  libmedia_jni.so  ???
+0x5aa6f000 - 0x5ab77fff  libstagefright.so  ???
+0x5ab78000 - 0x5ab8efff  libdrmframework.so  ???
+0x5ab90000 - 0x5ac06fff  zoneinfo.dat  ???
+0x5ac25000 - 0x5ac3afff  libstagefright_omx.so  ???
+0x5ac3b000 - 0x5ae7afff  libchromium_net.so  ???
+0x5ae8d000 - 0x5b329fff  libbcc.so  ???
+0x5b34e000 - 0x5b444fff  libbcinfo.so  ???
+0x5b445000 - 0x5b9e1fff  libwebcore.so  ???
+0x5b9ea000 - 0x5bc89fff  libv8.so  ???
+0x5bc8b000 - 0x5c45ffff  icudt48l.dat  ???
+0x5c4fd000 - 0x5c5a9fff  data@app@com.dovo.xplan-1.apk@classes.dex  ???  (WARNING: No symbols, data@app@com.dovo.xplan-1.apk@classes.dex, 000000000000000000000000000000000)
+0x5c5d5000 - 0x5c684fff  libGLESv2_adreno200.so  ???
+0x5c69b000 - 0x5c6f5fff  libq3dtools_adreno200.so  ???
+0x5cf8c000 - 0x5cf93fff  DroidSansHebrew-Regular.ttf  ???
+0x5cfd8000 - 0x5cfe0fff  DroidSansThai.ttf  ???
+0x5d0c2000 - 0x5d0c5fff  DroidSansArmenian.ttf  ???
+0x5d0c6000 - 0x5d0cbfff  DroidSansGeorgian.ttf  ???
+0x5d0cc000 - 0x5d0d4fff  DroidSansTamil-Regular.ttf  ???
+0x5d1ab000 - 0x5d2a8fff  binder  ???
+0x5d2ea000 - 0x5d2f5fff  AnjaliNewLipi-light.ttf  ???
+0x5dfb9000 - 0x5e5b5fff  libxplan.so  ???  (WARNING: No symbols, libxplan.so, 8E3836B400541D99C9A900573B6EA11D0)
+0x5e8e0000 - 0x5e9dffff  dalvik-jit-code-cache (deleted)  ???  (WARNING: No symbols, dalvik-jit-code-cache (deleted), 000000000000000000000000000000000)
+0x5e9e0000 - 0x5eb51fff  libsc-a2xx.so  ???
+0x5f8b1000 - 0x5f8d7fff  DroidNaskh-Regular-SystemUI.ttf  ???
+0x5f8d8000 - 0x5f90ffff  DroidSansEthiopic-Regular.ttf  ???
+0x5f910000 - 0x5f92efff  DroidSansDevanagari-Regular.ttf  ???
+0x5f92f000 - 0x5f951fff  Lohit-Bengali.ttf  ???
+0x5f952000 - 0x5f982fff  Lohit-Kannada.ttf  ???
+0x5f983000 - 0x5f9acfff  Lohit-Telugu.ttf  ???
+0x60dd0000 - 0x612f5fff  DroidSansFallback.ttf  ???
